@@ -36,7 +36,7 @@ public class SwaggerConfig {
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Dealer & Vehicle Management")
-                        .url("https://github.com/Mrdheerajcs"));
+                        .url("https://github.com/Mrdheerajcs/Dealer_Vehicle_Management"));
 
     }
 
