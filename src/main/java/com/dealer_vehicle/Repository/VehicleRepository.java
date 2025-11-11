@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
-
+    boolean existsByDealerIdAndModelIgnoreCase(Long dealerId, String model);
     @Query("SELECT v FROM Vehicle v WHERE v.dealer.subscriptionType = :type")
     List<Vehicle> findAllByDealerSubscriptionType(Dealer.SubscriptionType type);
 }
